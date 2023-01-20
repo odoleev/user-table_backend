@@ -5,12 +5,7 @@ async function start() {
   const PORT = process.env.PORT || 5000;
   const app = await NestFactory.create(AppModule);
   app.enableCors({
-    origin: [
-      'https://user-table-front.vercel.app/',
-      'https://user-table-front.vercel.app/login/',
-      'https://user-table-front.vercel.app/registration/',
-      'https://user-table-front.vercel.app/table/',
-    ],
+    origin: true,
     credentials: true,
   });
 
