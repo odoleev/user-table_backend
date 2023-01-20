@@ -7,9 +7,9 @@ async function start() {
   app.enableCors({
     origin: [
       'https://user-table-front.vercel.app/',
-      'https://user-table-front.vercel.app/login',
-      'https://user-table-front.vercel.app/registration',
-      'https://user-table-front.vercel.app/table',
+      'https://user-table-front.vercel.app/login/',
+      'https://user-table-front.vercel.app/registration/',
+      'https://user-table-front.vercel.app/table/',
     ],
     credentials: true,
   });
